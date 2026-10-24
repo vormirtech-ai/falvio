@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Checkout — FALVIO Perfume</title>
+  <meta name="description" content="Complete your FALVIO order request.">
+  <meta name="theme-color" content="#FAFAF8">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="checkout">
+  <main id="main">
+    <section class="page-hero" style="padding-bottom:30px">
+      <div class="wrap"><span class="eyebrow">Checkout</span><h1 class="silver h-lg">Your order</h1></div>
+    </section>
+    <section class="section" style="padding-top:20px">
+      <div class="wrap" id="checkoutArea">
+        <div class="checkout">
+          <form class="form glass" id="orderForm" data-form="order" style="padding:clamp(24px,3.4vw,46px)">
+            <h2 class="silver h-md">Delivery details</h2>
+            <div class="row">
+              <div class="field"><label for="o-name">Full name</label><input id="o-name" name="name" required autocomplete="name"><span class="err" aria-live="polite"></span></div>
+              <div class="field"><label for="o-email">Email</label><input id="o-email" name="email" type="email" required autocomplete="email"><span class="err" aria-live="polite"></span></div>
+            </div>
+            <div class="field"><label for="o-phone">Telephone (optional)</label><input id="o-phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="field"><label for="o-addr">Address</label><input id="o-addr" name="address" required autocomplete="street-address"><span class="err" aria-live="polite"></span></div>
+            <div class="row">
+              <div class="field"><label for="o-city">City</label><input id="o-city" name="city" required autocomplete="address-level2"><span class="err" aria-live="polite"></span></div>
+              <div class="field"><label for="o-zip">Postal code</label><input id="o-zip" name="postal" required autocomplete="postal-code"><span class="err" aria-live="polite"></span></div>
+            </div>
+            <div class="field"><label for="o-country">Country</label><input id="o-country" name="country" required autocomplete="country-name"><span class="err" aria-live="polite"></span></div>
+            <div class="field"><label for="o-notes">Gift message or notes (optional)</label><textarea id="o-notes" name="notes" style="min-height:100px"></textarea></div>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
+            <p class="muted" style="margin:0;font-size:14px">No payment is taken on this page. After you place your order request, our client care team will email you to confirm payment and delivery.</p>
+            <div><button class="btn btn-dark" type="submit"><span>Place order request</span></button></div>
+            <p class="form-msg" role="status" aria-live="polite"></p>
+          </form>
+          <aside class="summary glass" id="summary" aria-label="Order summary"></aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

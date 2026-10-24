@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact — FALVIO Perfume</title>
+  <meta name="description" content="Contact FALVIO Perfume client care.">
+  <meta name="theme-color" content="#FAFAF8">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact">
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow reveal">Client Care</span>
+        <h1 class="silver h-xl reveal" style="--d:.1s">Write to us</h1>
+        <p class="lede reveal" style="--d:.2s">Questions about the fragrance, an order or a gift — our team will reply by email.</p>
+      </div>
+    </section>
+    <section class="section" style="padding-top:0">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <h2 class="silver h-md">We are here to help</h2>
+          <ul class="contact-list" data-contact></ul>
+        </div>
+        <form class="form glass reveal" data-form="contact" style="padding:clamp(24px,3.4vw,46px);--d:.1s">
+          <div class="row">
+            <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" required autocomplete="name"><span class="err" aria-live="polite"></span></div>
+            <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required autocomplete="email"><span class="err" aria-live="polite"></span></div>
+          </div>
+          <div class="field"><label for="c-topic">Subject</label><select id="c-topic" name="subject"><option>General enquiry</option><option>An existing order</option><option>Gifting</option><option>Press &amp; partnerships</option></select></div>
+          <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required minlength="10"></textarea><span class="err" aria-live="polite"></span></div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
+          <div><button class="btn btn-dark" type="submit"><span>Send message</span></button></div>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
